@@ -3,7 +3,7 @@ let taskInput = document.getElementById("task-input");
 let taskList = [];
 let tabs = document.querySelectorAll(".task-tabs div");
 let filterList = [];    // mode에 따라 변화 될 taskList를 담을 array
-let mode ="all";
+let mode ="all";    // todo 접속 시 전체 조회 = default 값
 
 for(let i=1; i<tabs.length; i++){
     tabs[i].addEventListener("click", function(event){filter(event)}); 
